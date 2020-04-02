@@ -152,9 +152,13 @@ class Minstack{
     public:
         MinStack() {}
         void push(int x) {
-
+            _s.push(x);
+            if (_minS.empty() || _minS.top() >= x) {
+                _minS.push(x);
+            }
         }
+        void 
     private:
         stack<int> _minS;
-        stack
+        stack<int> _s;
 };
