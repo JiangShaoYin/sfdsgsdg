@@ -139,7 +139,7 @@ int main() {
             circle_start++;
         }
         i = (i + 1) % n;
-        if () 
+        if (circle_start > n) break; 
 
     }
     cout << ret  << endl;
