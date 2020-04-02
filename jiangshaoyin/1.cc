@@ -151,5 +151,10 @@ int main() {
 class Minstack{
     public:
         MinStack() {}
-        
+        void push(int x) {
+
+        }
+    private:
+        stack<int> _minS;
+        stack
 };
