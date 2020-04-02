@@ -37,6 +37,11 @@ int main() {
         }
         if (flag) start++;
         else start = 0;
-        if (start >= costs.size())
+        if (start >= costs.size()) break;
+        if (!flag) i = (i + 1) % (costs.size());
+        else 
+            i = i % costs.size();
     }
+    cout << ret  << endl;
+    return 0;
 }
