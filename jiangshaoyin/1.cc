@@ -127,7 +127,7 @@ int main() {
         cin >> tem;
         costs.push_back(tem);
     }
-    int ret = 0, i = 0, start = 0, flag = false;
+    int ret = 0, i = 0, circle_start = 0, loop_circle = false;
     while (capacity >= 0) {
         if (capacity - costs[i] >= 0) {
             ret++;
