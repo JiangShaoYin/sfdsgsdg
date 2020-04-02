@@ -172,26 +172,26 @@ class Minstack{
         stack<int> _s;
 };
 
-class Minstack{
+class Maxstack{
     public:
-        MinStack() {}
+        Maxstack() {}
         void push(int x) {
             _s.push(x);
-            if (_minS.empty() || _minS.top() >= x) {
-                _minS.push(x);
+            if (_maxS.empty() || _maxS.top() <= x) {
+                _maxS.push(x);
             }
         }
         void pop() {
             if (_s.empty()) return;
-            if (_s.top() == _minS.top()) _minS.pop();
+            if (_s.top() == _maxS.top()) _maxS.pop();
             _s.pop();
         }
         int top() {return _s.pop();}
-        int getMin() {
-            if (_minS.empty()) return -1;
-            return _minS.top();
+        int getMax() {
+            if (_maxS.empty()) return -1;
+            return _maxS.top();
         }
     private:
-        stack<int> _minS;
+        stack<int> _maxS;
         stack<int> _s;
 };
