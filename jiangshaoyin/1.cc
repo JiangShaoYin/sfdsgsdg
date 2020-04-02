@@ -33,7 +33,10 @@ int main() {
             flag = false;
         } else {
             flag = true;
-            
+            costs.erase(costs.begin() + i); 
         }
+        if (flag) start++;
+        else start = 0;
+        if (start >= costs.size())
     }
 }
