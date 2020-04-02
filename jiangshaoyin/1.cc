@@ -133,12 +133,13 @@ int main() {
             ret++;
             capacity -= costs[i];
             loop_circle = false;
-            circle_start = 
+            circle_start = 0;
         } else {
             loop_circle = true;
             circle_start++;
         }
-        i = (i + 1) % n; 
+        i = (i + 1) % n;
+        if () 
 
     }
     cout << ret  << endl;
