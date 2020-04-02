@@ -225,7 +225,9 @@ int main() {
         MinStack *mins = creatMinStack(nums, i);
         MaxStack *maxs = creatMaxStack(nums, i);
         for (int j = 0; j < i; ++j) {
-            int max_num = maxs->getMax()
+            int max_num = maxs->getMax(), min_num = mins->getMin();
+            ret ^= (max_num ^ min_num);
+            mins.pop(); maxs->pop();
         }
 
     }
