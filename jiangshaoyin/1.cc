@@ -27,6 +27,13 @@ int main() {
     }
     int ret = 0, i = 0, start = 0, flag = false;
     while (capacity >= 0) {
-        if (capacity - costs)
+        if (capacity - costs[i] >= 0) {
+            ret++;
+            capacity -= costs[i];
+            flag = false;
+        } else {
+            flag = true;
+            
+        }
     }
 }
