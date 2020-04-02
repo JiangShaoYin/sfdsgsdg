@@ -25,6 +25,8 @@ int main() {
         cin >> tem;
         costs.push_back(tem);
     }
-    int ret = 0, i = 0, start = 0, 
-    for ()
+    int ret = 0, i = 0, start = 0, flag = false;
+    while (capacity >= 0) {
+        if (capacity - costs)
+    }
 }
