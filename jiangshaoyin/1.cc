@@ -1,7 +1,3 @@
-#pragma once
-# ifndef __FUNC_H__
-# define __FUNC_H__
-
 #include <string>
 #include <sstream>
 #include <string>
@@ -19,3 +15,10 @@
 #include <numeric>
 #include <unordered_map>
 using namespace std;
+
+int main() {
+    int n, capacity;
+    cin >> n >> capacity;
+    vector<int> costs;
+    for (int i = 0; i < n; )
+}
