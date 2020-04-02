@@ -231,4 +231,6 @@ int main() {
         }
 
     }
+    cuot << ret << endl;
+    return 0;
 }
