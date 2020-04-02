@@ -195,3 +195,7 @@ class Maxstack{
         stack<int> _maxS;
         stack<int> _s;
 };
+MaxStack* creatMaxStack(vector<int>& nums, int i) {
+    MaxStack* maxS = new MaxStack();
+    
+}
