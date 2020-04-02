@@ -145,3 +145,11 @@ int main() {
     cout << ret  << endl;
     return 0;
 }
+
+
+
+class Minstack{
+    public:
+        MinStack() {}
+        
+};
