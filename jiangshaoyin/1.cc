@@ -203,10 +203,17 @@ MaxStack* creatMaxStack(vector<int>& nums, int i) {
     return maxS;
 }
 
-MinStack* creatMaxStack(vector<int>& nums, int i) {
+MinStack* creatMinStack(vector<int>& nums, int i) {
     MinStack* minS = new MaxStack();
     for (int j = i; j >= 0; --j) {
-        maxS->push(nums[j]);
+        minS->push(nums[j]);
     }
-    return maxS;
+    return minS;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> nums;
+    for (int i = 0; i < n; )
 }
