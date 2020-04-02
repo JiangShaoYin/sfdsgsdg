@@ -157,7 +157,12 @@ class Minstack{
                 _minS.push(x);
             }
         }
-        void 
+        void pop() {
+            if (_s.empty()) return;
+            if (_s.top() == _minS.top()) _minS.pop();
+            _s.pop();
+        }
+        int top() {return }
     private:
         stack<int> _minS;
         stack<int> _s;
