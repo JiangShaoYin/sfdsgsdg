@@ -20,5 +20,11 @@ int main() {
     int n, capacity;
     cin >> n >> capacity;
     vector<int> costs;
-    for (int i = 0; i < n; )
+    for (int i = 0; i < n; ++i) {
+        int tem;
+        cin >> tem;
+        costs.push_back(tem);
+    }
+    int ret = 0, i = 0, start = 0, 
+    for ()
 }
