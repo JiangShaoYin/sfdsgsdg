@@ -132,7 +132,10 @@ int main() {
         if (capacity - costs[i] >= 0) {
             ret++;
             capacity -= costs[i];
-            flag = false;
+            loop_circle = false;
+        } else {
+            loop_circle = true;
+            circle_start++;
         }
         i = (i + 1) % n; 
 
