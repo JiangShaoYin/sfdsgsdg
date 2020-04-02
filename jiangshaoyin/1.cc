@@ -197,5 +197,16 @@ class Maxstack{
 };
 MaxStack* creatMaxStack(vector<int>& nums, int i) {
     MaxStack* maxS = new MaxStack();
-    
+    for (int j = i; j >= 0; --j) {
+        maxS->push(nums[j]);
+    }
+    return maxS;
+}
+
+MinStack* creatMaxStack(vector<int>& nums, int i) {
+    MinStack* minS = new MaxStack();
+    for (int j = i; j >= 0; --j) {
+        maxS->push(nums[j]);
+    }
+    return maxS;
 }
