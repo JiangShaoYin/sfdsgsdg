@@ -222,6 +222,11 @@ int main() {
     }
     int ret = 0;
     for (int i = nums.size()- 1; i > 0; --i) {
-        MinStack *mins = creat
+        MinStack *mins = creatMinStack(nums, i);
+        MaxStack *maxs = creatMaxStack(nums, i);
+        for (int j = 0; j < i; ++j) {
+            int max_num = maxs->getMax()
+        }
+
     }
 }
