@@ -133,6 +133,7 @@ int main() {
             ret++;
             capacity -= costs[i];
             loop_circle = false;
+            circle_start = 
         } else {
             loop_circle = true;
             circle_start++;
