@@ -215,5 +215,13 @@ int main() {
     int n;
     cin >> n;
     vector<int> nums;
-    for (int i = 0; i < n; )
+    for (int i = 0; i < n; ++i) {
+        int tmp;
+        cin >> tmp;
+        nums.push_back(tmp);
+    }
+    int ret = 0;
+    for (int i = nums.size()- 1; i > 0; --i) {
+        MinStack *mins = creat
+    }
 }
