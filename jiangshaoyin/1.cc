@@ -162,7 +162,35 @@ class Minstack{
             if (_s.top() == _minS.top()) _minS.pop();
             _s.pop();
         }
-        int top() {return }
+        int top() {return _s.pop();}
+        int getMin() {
+            if (_minS.empty()) return -1;
+            return _minS.top();
+        }
+    private:
+        stack<int> _minS;
+        stack<int> _s;
+};
+
+class Minstack{
+    public:
+        MinStack() {}
+        void push(int x) {
+            _s.push(x);
+            if (_minS.empty() || _minS.top() >= x) {
+                _minS.push(x);
+            }
+        }
+        void pop() {
+            if (_s.empty()) return;
+            if (_s.top() == _minS.top()) _minS.pop();
+            _s.pop();
+        }
+        int top() {return _s.pop();}
+        int getMin() {
+            if (_minS.empty()) return -1;
+            return _minS.top();
+        }
     private:
         stack<int> _minS;
         stack<int> _s;
