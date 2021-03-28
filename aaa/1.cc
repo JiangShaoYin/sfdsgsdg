@@ -18,5 +18,8 @@ using namespace std;
 
 // 2
 int bestMethod(vector<int>& finance_product_capacity, vector<int>& benifit, int n, int M) {
-    
+    vector<int> max_benifit(M + 1, 0);
+    for (int i = 0; i < n; i++) {
+        max_benifit
+    }
 }
