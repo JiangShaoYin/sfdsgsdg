@@ -17,11 +17,11 @@
 using namespace std;
 
 // 2
-int bestMethod(vector<int>& finance_product_capacity, vector<int>& benifit, int n, int M) {
+int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, int M) {
     vector<int> max_benifit(M + 1, 0);
     for (int i = 0; i < n; i++) {
-        for (int cash = finance_product_capacity[i]; cash <= M; cash++) {
-            max_benifit[cash] = max(max_benifit[cash], max_benifit[cash - finance_product_capacity[i]] + benifit[i]);
+        for (int cash = cash_needed4product[i]; cash <= M; cash++) {
+            max_benifit[cash] = max(max_benifit[cash], max_benifit[cash - cash_needed4product[i]] + benifit[i]);
         }
     }
     return max_benifit[M];
