@@ -16,6 +16,5 @@
 #include <unordered_map>
 using namespace std;
 
-int main() {
-
-}
+// 2
+int bestMethod()
