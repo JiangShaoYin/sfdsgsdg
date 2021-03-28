@@ -34,6 +34,9 @@ TreeNode* CommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 TreeNode* p_q_ancestor_or_p_q(TreeNode* root, TreeNode* p, TreeNode* q) {
     if (root == nullptr || root == p || root == q) return root;
     auto left = p_q_ancestor_or_p_q(root->left, p, q);
-    auto right = p_q_ancestor_or_p_q(root->left, p, q);
-
+    auto right = p_q_ancestor_or_p_q(root->right, p, q);
+    if (left && right) {
+        return root;
+    }
+    return left ? left : right;
 }
