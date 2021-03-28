@@ -20,8 +20,8 @@ import datetime
 import calendar
 
 def dealDate(year):
-    year = 
-    month_info = calender.monthrange(yea)
+    year = datetime(year)
+    month_info = calender.monthrange(year, )
 
 // 2
 int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, int M) {
