@@ -15,6 +15,8 @@
 #include <numeric>
 #include <unordered_map>
 using namespace std;
+// 1
+def deal
 
 // 2
 int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, int M) {
