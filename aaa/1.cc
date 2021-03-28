@@ -21,7 +21,8 @@ import calendar
 
 def dealDate(year):
     year = datetime(year)
-    month_info = calender.monthrange(year, )
+    for month in range [1,13]:
+        month_info = calender.monthrange(year, )
 
 // 2
 int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, int M) {
