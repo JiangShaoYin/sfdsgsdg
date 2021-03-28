@@ -28,4 +28,9 @@ int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, in
 }
 
 // 3
-TreeNode* CommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+TreeNode* CommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    return p_q_ancestor_or_p_q(root, p, q);
+}
+TreeNode* p_q_ancestor_or_p_q(TreeNode* root, TreeNode* p, TreeNode* q) {
+    
+}
