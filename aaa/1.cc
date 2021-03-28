@@ -17,4 +17,6 @@
 using namespace std;
 
 // 2
-int bestMethod()
+int bestMethod(vector<int> finance_product, int n, int M) {
+
+}
