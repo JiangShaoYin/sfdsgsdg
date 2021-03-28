@@ -26,3 +26,6 @@ int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, in
     }
     return max_benifit[M];
 }
+
+// 3
+TreeNode* CommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
