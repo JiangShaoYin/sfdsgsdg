@@ -16,7 +16,12 @@
 #include <unordered_map>
 using namespace std;
 // 1
-def deal
+import datetime
+import calendar
+
+def dealDate(year):
+    year = 
+    month_info = calender.monthrange(yea)
 
 // 2
 int bestMethod(vector<int>& cash_needed4product, vector<int>& benifit, int n, int M) {
